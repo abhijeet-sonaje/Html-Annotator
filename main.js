@@ -15,6 +15,7 @@ $(document).ready(function () {
             ele.innerHTML = sel;
             if (sel.rangeCount > 0) {
                 var range = sel.getRangeAt(0);
+                sel.deleteFromDocument();
                 range.collapse(false);
                 range.insertNode(ele);
                 $("#tag" + i).popover({
