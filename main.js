@@ -55,3 +55,8 @@ var closeTag = function (event) {
     var id = event.parentElement.children[0].placeholder;
     $('#' + id).popover('toggle');
 }
+
+var removeTag = function (event) {
+    var id = event.parentElement.children[0].placeholder;
+    $('#' + id).contents().unwrap();
+}
