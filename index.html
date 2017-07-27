@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- bootstrap -->
-  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- main.js -->
   <script src="main.js"></script>
@@ -39,10 +39,10 @@
     <br>
 
     <div id="popover-content" class="hide">
-      <input type="text" placeholder="Tag" id="popoverInput" class="form-control" maxlength="10">
-      <button class="btn btn-primary" onclick="saveTag(this)">Save</button>
-      <button class="btn" onclick="closeTag(this)">Cancle</button>
-      <button class="btn" onclick="removeTag(this)">Remove</button>
+      <input style="margin-bottom : 5px;" type="text" placeholder="Tag" id="popoverInput" class="form-control" maxlength="10">
+      <button class="btn btn-primary" onclick="saveTag(this)"><span class="glyphicon glyphicon-ok"></span> Save</button>
+      <!-- <button class="btn" onclick="closeTag(this)"><span class="glyphicon glyphicon-remove"></span> Cancle</button> -->
+      <button class="btn btn-danger" style="float : right;" onclick="removeTag(this)"><span class="glyphicon glyphicon-trash"></span> Remove</button>
     </div>
   </div>
 

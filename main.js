@@ -48,15 +48,16 @@ var saveTag = function (event) {
         v = prev;
     }
     $('#' + prev)[0].id = v;
-    $('#' + v).popover('toggle');
+    $('#' + v).popover('hide');
 }
 
-var closeTag = function (event) {
-    var id = event.parentElement.children[0].placeholder;
-    $('#' + id).popover('toggle');
-}
+// var closeTag = function (event) {
+//     var id = event.parentElement.children[0].placeholder;
+//     $('#' + id).popover('hide');
+// }
 
 var removeTag = function (event) {
     var id = event.parentElement.children[0].placeholder;
+    $('#' + id).popover('hide');
     $('#' + id).contents().unwrap();
-}
+} 
